@@ -1,5 +1,14 @@
 /****
-strcpy函数代码
+char *strcpy(char *a){
+    int x=strlen(a);
+    char *p=(char*)malloc(sizeof(char)*(x+1));
+    int i;
+    for(i=0;i<x;i++){
+        p[i]=a[i];
+    }
+    p[i]='\0';
+    return p;
+}
 ****/
 /**
 本地仓库
